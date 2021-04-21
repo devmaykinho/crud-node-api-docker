@@ -5,13 +5,12 @@ const { DB_PORT, DB_USERNAME, DB_PASSWORD, DB_HOST, DB_DATABASE } = process.env;
 module.exports = {
 
     development: {
-      client: "pg",
+      client: "mysql",
       connection: {
-        host: "gta-erp.cp8u2bk6ibid.us-east-1.rds.amazonaws.com",
-        port: 5432,
-        user: "gtaprod",
-        password: "Maalbuqu3",
-        database: "gtaerpprod",
+        host: "db",
+        user: "root",
+        password: "123456",
+        database: "sistema",
       },
       pool: {
         min: 2,

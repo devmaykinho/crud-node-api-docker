@@ -2,7 +2,7 @@ const query = require('./util/queryExecute')
 
 async function find(request, response) {
 
-    const result = await query.selectAll('employees')
+    const result = await query.selectAll('employee')
 
     return response.status(result.code).json(result.data)
 }
@@ -10,13 +10,13 @@ async function find(request, response) {
 async function findOne(request, response) {
     const { id } = request.params
 
-    const result = await query.selectOne('employees', "rg", id)
+    const result = await query.selectOne('employee', "rg", id)
 
     return response.status(result.code).json(result.data)
 }
 
 async function create(request, response) {
-    const result = await query.create('employees', request.body, request.body.rg )
+    const result = await query.create('employee', request.body, request.body.rg )
 
     return response.status(result.code).json(result.data)
 
