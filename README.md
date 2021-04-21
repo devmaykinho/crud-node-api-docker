@@ -10,5 +10,6 @@ Pré requitos
  - Ter instalado o Docker e Docker Compose  
 
 Executanto a aplicação
- 1 - nodiretorio onde está o aquivo docker-compose.yml, executar o comando abaixo:
+* nodiretorio onde está o aquivo docker-compose.yml, executar o comando:
+
   docker-compose up -d
